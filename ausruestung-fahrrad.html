@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrrad & Gepäck – Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+        .page-header {
+            padding: 120px 20px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .page-header p { color: #aaa; margin-top: 8px; }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 24px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 1; }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .item-card:hover {
+            transform: translateY(-3px);
+            background: #222;
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .item-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border-bottom: 1px solid #222;
+        }
+
+        .item-card-body { padding: 16px; }
+        .item-card-body h3 { margin: 0 0 6px; font-size: 15px; font-weight: 500; }
+        .item-card-body p { margin: 0; font-size: 13px; color: #aaa; line-height: 1.6; }
+
+        .item-tag {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background: #1b5e20;
+            color: #a5d6a7;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="clean-nav">
+    <a href="index.html" class="nav-logo">
+        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="#projekt">Projekt</a>
+        <a href="#route">Route</a>
+        <a href="#gallery">Galerie</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="#kontakt">Kontakt</a>
+        <!-- Optionaler Call-to-Action Button direkt in der Navi, wie im Template -->
+        <a href="#sponsoring" class="nav-btn">Sponsoring</a>
+    </div>
+</nav>
+
+<div class="page-header">
+    <a href="ausruestung.html" class="back-link">← Zurück zur Ausrüstung</a>
+    <h1>Fahrrad & Gepäck</h1>
+    <p>Das Herzstück der Reise – und was dran hängt.</p>
+</div>
+
+<section>
+    <div class="item-grid">
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Marin_DSX.jpg" alt="Fahrrad">
+            <div class="item-card-body">
+                <h3>Fahrrad</h3>
+                <p>Ein Marin DSX. Ich brauchte ein Fahrrad, dass auch mal ein paar raue Straßen fahren kann. Über die Jahre wurden wesentliche Veränderungen vorgenommen.</p>
+                <span class="item-tag">Der Esel</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Ortlieb_Arschrackete.jpg" alt="Fahrrad-Taschen">
+            <div class="item-card-body">
+                <h3>Gepäcktaschen</h3>
+                <p>Bikepacking Taschen von Ortlieb. Nie wieder ein nasses Zelt!</p>
+                <span class="item-tag">Gepäck</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/ACID_Beleuchtung.jpg" alt="Fahrrad-Beleuchtung">
+            <div class="item-card-body">
+                <h3>Beleuchtung</h3>
+                <p>Vorder- und Rücklicht laut StVO. Läuft beides über ein Nabendynamo. Extra Licht noch dabei von ACID.</p>
+                <span class="item-tag">Licht</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Prophete_Faltschloss.jpg" alt="Fahrrad-Beleuchtung">
+            <div class="item-card-body">
+                <h3>Faltschloss</h3>
+                <p>Ein Faltschloss von Prophete. Es kostete nur knapp 30 Euro.</p>
+                <span class="item-tag">Sicherheit</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Rockbros_fahrradschloss.jpg" alt="Fahrrad-Schloss">
+            <div class="item-card-body">
+                <h3>Kabelschloss</h3>
+                <p>ROCKBROS Kabelschloss.</p>
+                <span class="item-tag">Sicherheit</span>
+            </div>
+        </div>
+        <!-- Weitere Items einfach hier einfügen -->
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Kilometer für den Kopf · <a href="index.html" style="color:#4caf50; text-decoration:none;">Zurück zur Hauptseite</a>
+</footer>
+
+</body>
+</html>

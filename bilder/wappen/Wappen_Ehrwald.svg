@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+   height="740px"
+   width="640px"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="blazono_ehrwald"
+   viewBox="0 0 640 740"
+   >
+  <desc>Wappen der Tiroler Gemeinde Ehrwald</desc><!-- prenita de Wappen_at_ehrwald.gif, Luctor -->
+  <defs id="difinoj">
+    <pattern id="trianguloj" width="123" height="290" patternUnits="userSpaceOnUse" patternTransform="translate(12.5,12.5)">
+      <rect style="stroke:none; fill: #fff;" x="0" y="0" width="123" height="290" />
+      <g id="areoj" style="stroke:none; fill:#007136;">
+        <path d="M   0,145 L    0,0   L 61.5,145 z" />
+        <path d="M 123,145 L  123,0   L 61.5,145 z" />
+        <path d="M   0,290 L 61.5,145 L  123,290 z" />
+      </g>
+
+      <g id="linioj" style="stroke:#000; stroke-width: 4.0; fill:none;">
+        <path d="M 0,0   L 123,0  " />
+        <path d="M 0,145 L 123,145" />
+        <path d="M 0,290 L 123,290" />
+
+        <path d="M 0,0   L 123,290" />
+        <path d="M 0,290 L 123,0  " />
+      </g>
+    </pattern>
+  </defs>
+  <title>Blazono de Ehrwald</title>
+  <g id="ĉio">
+    <path id="rando" style="fill:url(#trianguloj); stroke:#000; stroke-width: 14;"
+          d="M 7,7 L 7,420 a 313,313 0 0 0 626,0 L 633,7 z"
+    />
+  </g>
+</svg>

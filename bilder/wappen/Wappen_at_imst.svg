@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="389.21808"
+   height="471.98889"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="Wappen_imst.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   style="display:inline">
+  <defs
+     id="defs4">
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Wappenschild"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       sodipodi:nodetypes="csscccccsssccc"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;display:inline"
+       d="M 383.19225,655.88218 C 356.2078,652.20739 326.11184,641.50199 302.81795,627.2923 C 265.40431,604.46932 235.10242,562.31624 221.15971,513.69719 C 213.78189,487.9703 214.25856,499.62596 213.81826,334.18362 L 213.42239,185.43362 L 408.03141,185.43362 L 602.64048,185.43362 L 602.32308,332.68362 C 602.00738,479.13811 601.99378,479.99845 599.81778,491.93362 C 593.32908,527.52347 581.66024,554.78205 561.7188,580.93362 C 554.09035,590.93771 535.65443,609.21154 525.32421,617.00824 C 484.42605,647.87598 431.2334,662.42449 383.19225,655.88218 z M 534.63027,601.38702 L 534.63027,601.38702 z"
+       id="path3170"
+       transform="translate(-213.42239,-185.43362)" />
+    <path
+       id="path3148"
+       d="M 408.12239,654.74313 C 381.13794,651.06834 326.11184,641.50199 302.81795,627.2923 C 265.40431,604.46932 235.10242,562.31624 221.15971,513.69719 C 213.78189,487.9703 214.25856,499.62596 213.81826,334.18362 L 213.42239,185.43362 L 408.12239,185.43362 L 408.12239,191.75512 L 408.12239,654.74313 z"
+       style="fill:#d83124;fill-opacity:1;stroke:none;stroke-opacity:1;display:inline"
+       sodipodi:nodetypes="cssccccc"
+       transform="translate(-213.42239,-185.43362)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Wappenbild"
+     style="display:inline">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline"
+       id="rect3150"
+       width="190.06679"
+       height="127.21659"
+       x="3.8827739"
+       y="155.17979" />
+    <path
+       style="fill:#d83124;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline"
+       d="M 335.13258,4.9888916 C 323.9308,11.151543 314.13928,26.20124 314,39.988892 L 314,191.98406 L 355,191.98889 C 370.55309,186.10924 379.64711,178.99354 385,165.98889 L 385,273.98889 C 378.42777,262.90259 368.38473,245.76269 354,245.98889 L 314,245.98889 L 314,409.98889 C 314.61968,415.32805 319.9453,417.73889 326.27927,417.44065 C 298.92345,440.20014 275.94263,451.15606 248.49753,459.36198 C 254.18409,455.18024 260.18002,446.85076 260.61936,438.65386 L 261.62951,248.2401 L 222.23356,247.73503 C 208.81055,248.82133 199.42301,261.40728 196,272.99358 L 196.00391,166.98889 C 200.17185,181.48847 209.33206,189.48448 219,191.98406 L 262,191.98889 L 260.74563,38.002104 C 258.32452,24.598336 248.61619,9.642659 235.13258,4.9888916 L 335.13258,4.9888916 z"
+       id="path3933"
+       sodipodi:nodetypes="ccccccccccccccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Wappenform"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       transform="translate(-213.42239,-185.43362)"
+       id="path3168"
+       d="M 383.19225,655.88218 C 356.2078,652.20739 326.11184,641.50199 302.81795,627.2923 C 265.40431,604.46932 235.10242,562.31624 221.15971,513.69719 C 213.78189,487.9703 214.25856,499.62596 213.81826,334.18362 L 213.42239,185.43362 L 408.03141,185.43362 L 602.64048,185.43362 L 602.32308,332.68362 C 602.00738,479.13811 601.99378,479.99845 599.81778,491.93362 C 593.32908,527.52347 581.66024,554.78205 561.7188,580.93362 C 554.09035,590.93771 535.65443,609.21154 525.32421,617.00824 C 484.42605,647.87598 431.2334,662.42449 383.19225,655.88218 z M 531.07116,604.20588 L 534.63027,601.38702 C 540.36244,596.84706 552.14763,584.01641 558.68904,575.19401 C 575.69366,552.25987 587.95768,523.92101 592.58068,496.87972 C 595.97048,477.05116 596.55198,451.17055 596.56188,319.68362 L 596.57138,192.43362 L 407.57143,192.43362 L 218.57143,192.43362 L 218.59203,326.18362 C 218.60342,400.17694 219.04044,466.53798 219.57018,474.71579 C 221.9905,512.07937 236.39763,549.93333 259.41836,579.4147 C 265.94511,587.77315 282.25372,604.41742 283.92735,604.42814 C 354.52291,663.99691 459.40418,665.3514 531.07116,604.20588 z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;display:inline"
+       sodipodi:nodetypes="csscccccssscccsscccccsscc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline"
+       d="M 195,4.885517 L 194.91071,466.54246"
+       id="path3923"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

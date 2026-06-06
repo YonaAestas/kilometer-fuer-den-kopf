@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrrad & Gepäck – Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 120px 20px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .page-header p { color: #aaa; margin-top: 8px; }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 24px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 1; }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .item-card:hover {
+            transform: translateY(-3px);
+            background: #222;
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .item-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border-bottom: 1px solid #222;
+        }
+
+        .item-card-body { padding: 16px; }
+        .item-card-body h3 { margin: 0 0 6px; font-size: 15px; font-weight: 500; }
+        .item-card-body p { margin: 0; font-size: 13px; color: #aaa; line-height: 1.6; }
+
+        .item-tag {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background: #1b5e20;
+            color: #a5d6a7;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="clean-nav">
+    <a href="index.html" class="nav-logo">
+        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="#projekt">Projekt</a>
+        <a href="#route">Route</a>
+        <a href="#gallery">Galerie</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="#kontakt">Kontakt</a>
+        <!-- Optionaler Call-to-Action Button direkt in der Navi, wie im Template -->
+        <a href="#sponsoring" class="nav-btn">Sponsoring</a>
+    </div>
+</nav>
+
+<div class="page-header">
+    <a href="ausruestung.html" class="back-link">← Zurück zur Ausrüstung</a>
+    <h1>Klamotten & Alltagskleidung</h1>
+    <p>Kein Zwiebelprinzip. Manchmal.</p>
+</div>
+
+<section>
+    <div class="item-grid">
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Nakamura_Jersey.jpg" alt="Jersey">
+            <div class="item-card-body">
+                <h3>Jersey</h3>
+                <p>Fahrrad Jersey und kurze Hose von der Marke Nakamura. Simpel, luftig und schnell trocknend.</p>
+                <span class="item-tag">Gemütlich</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Arcteryx-cormac-hoody-laufshirt.jpg" alt="Laufshirt">
+            <div class="item-card-body">
+                <h3>Sonnen-Hoodie</h3>
+                <p>Laufshirt von Arc'teryx. Schützt den Kopf/Ohren vor starkem Wind und den Oberkörper vor zu hoher Sonneneinstrahlung.</p>
+                <span class="item-tag">Schützend</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Forclaz_Merinoshirt.jpg" alt="Merino">
+            <div class="item-card-body">
+                <h3>Merino</h3>
+                <p>Fürs Schlafen und kältere Abende am Lagerfeuer. Geruchsabweisend. </p>
+                <span class="item-tag">Leitend</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Simond_Daunenjacke_Trekking_MT100.jpg" alt="Daunenjacke">
+            <div class="item-card-body">
+                <h3>Daunenjacke</h3>
+                <p>Daunenjacke von SIMON. Bis zu Minus 5 Grad Celsius. Super kleines Packmaß, lange Ärmel und eine Kaputze, in der man sich verstecken kann.</p>
+                <span class="item-tag">Warm</span>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <img src="bilder/ausruestung/Helikon-Windrunner-Desert-Night-Camo.jpg" alt="Windjacke">
+            <div class="item-card-body">
+                <h3>Windjacke</h3>
+                <p>Windrunner Jacke von Helikon-Tex. Gegen zu viel Wind oder einfach über die Daunen oder eine Fleece Jacke ziehen für extra Wärme. 
+                    Nicht Wasserfest.
+                </p>
+                <span class="item-tag">Wind</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Scott-aspect-gel-short-gloves.jpg" alt="Gel-Handschuhe">
+            <div class="item-card-body">
+                <h3>Gel-Handschuhe</h3>
+                <p>Unverzichtbar auf längeren Touren. Man rutscht nicht ab. Keine schmerzen beim zu harten greifen der Fahrrad-Lenker.</p>
+                <span class="item-tag">Keine Blasen</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Souke_Bib_Shorts.jpg" alt="Bib-Shorts">
+            <div class="item-card-body">
+                <h3>Bib-Shorts</h3>
+                <p>Bib-Shorts von der Marke Souke. Polster sind schön dick. Shorts sind einfach zu waschen. Durch die Träger
+                    sitzen die Shorts besonders gut.
+                </p>
+                <span class="item-tag">Bequem</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Mil_Tec_Regenponcho.jpg" alt="Poncho">
+            <div class="item-card-body">
+                <h3>Poncho</h3>
+                <p>Mil-Tec Regenponcho. Wenn es wirklich zu viel Regnet. Wurde schon, beim Fahrrad fahren, getestet. Würde ich aber nicht empfehlen.
+                    Der Poncho ist etwas schwerer, lässt keine Luft durch und wird sehr warm.
+                </p>
+                <span class="item-tag">Schutz</span>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <img src="bilder/ausruestung/Radfahrkappe.jpg" alt="Mützen">
+            <div class="item-card-body">
+                <h3>Radfahrkappe</h3>
+                <p>Lustige Mützen. Damit der Schweiß nicht wieder in den Augen landet.</p>
+                <span class="item-tag">Kopf</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Regatta_rainjacket.jpg" alt="Regenjacke">
+            <div class="item-card-body">
+                <h3>Regenjacke</h3>
+                <p>Regatta Regenjacke. Kleines Packmaß. Bisher nur auf kurzen Fahrrad Touren getragen.</p>
+                <span class="item-tag">Schutz</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Beyond_nordic_bn302_ 3l_hard_shell_ jacket.jpg" alt="Regenjacke">
+            <div class="item-card-body">
+                <h3>Regenjacke</h3>
+                <p>Beyond Nordic Shelljacke BN302. Glaube, die beste Regenjacke die ich bis jetzt hatte. Zusätzlich mit RECCO ausgestattet.</p>
+                <span class="item-tag">Schutz</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Arcteryx_norvan_7.jpg" alt="Weste">
+            <div class="item-card-body">
+                <h3>Weste</h3>
+                <p>Eine schöne leichte Weste von Arc'teryx. Platz für 2x 500ml Softflaschen und andere Süßigkeiten. Oder Stangenwurst, Käselaib usw.</p>
+                <span class="item-tag">Verstauen</span>
+            </div>
+        </div>
+        <!-- Weitere Items einfach hier einfügen -->
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Kilometer für den Kopf · <a href="index.html" style="color:#4caf50; text-decoration:none;">Zurück zur Hauptseite</a>
+</footer>
+
+</body>
+</html>

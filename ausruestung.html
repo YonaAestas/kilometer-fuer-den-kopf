@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ausrüstung – Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 120px 20px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .page-header p { color: #aaa; margin-top: 8px; }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 24px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 1; }
+
+        .kategorie-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .kategorie-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, background 0.2s;
+            display: block;
+        }
+        .kategorie-card:hover {
+            transform: translateY(-4px);
+            background: #222;
+        }
+        .kategorie-card-body { padding: 20px; }
+        .kategorie-icon { font-size: 28px; margin-bottom: 10px; display: block; }
+        .kategorie-card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 500; }
+        .kategorie-card p { margin: 0; font-size: 13px; color: #aaa; }
+        .kategorie-card .arrow { color: #4caf50; font-size: 13px; margin-top: 10px; display: block; }
+
+        @media (max-width: 768px) {
+            .kategorie-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="clean-nav">
+    <a href="index.html" class="nav-logo">
+        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="#projekt">Projekt</a>
+        <a href="#route">Route</a>
+        <a href="#gallery">Galerie</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="#kontakt">Kontakt</a>
+        <!-- Optionaler Call-to-Action Button direkt in der Navi, wie im Template -->
+        <a href="#sponsoring" class="nav-btn">Sponsoring</a>
+    </div>
+</nav>
+
+<div class="page-header">
+    <a href="index.html" class="back-link">← Zurück zur Hauptseite</a>
+    <h1>Ausrüstung</h1>
+    <p>Alles was ich auf der Reise dabei habe – und warum.</p>
+</div>
+
+<section>
+    <div class="kategorie-grid">
+
+        <a href="ausruestung-fahrrad.html" class="kategorie-card">
+            <div class="kategorie-card-body">
+                <span class="kategorie-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bike-icon lucide-bike"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></span>
+                <h3>Fahrrad & Gepäck</h3>
+                <p>Fahrrad, Taschen, Halterungen, Beleuchtung und alles was dran hängt.</p>
+                <span class="arrow">Ansehen →</span>
+            </div>
+        </a>
+
+        <a href="ausruestung-camping.html" class="kategorie-card">
+            <div class="kategorie-card-body">
+                <span class="kategorie-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tent-tree-icon lucide-tent-tree"><circle cx="4" cy="4" r="2"/><path d="m14 5 3-3 3 3"/><path d="m14 10 3-3 3 3"/><path d="M17 14V2"/><path d="M17 14H7l-5 8h20Z"/><path d="M8 14v8"/><path d="m9 14 5 8"/></svg></span>
+                <h3>Schlafen & Camping</h3>
+                <p>Zelt, Schlafsack, Isomatte und alles fürs Übernachten draußen.</p>
+                <span class="arrow">Ansehen →</span>
+            </div>
+        </a>
+
+        <a href="ausruestung-kleidung.html" class="kategorie-card">
+            <div class="kategorie-card-body">
+                <span class="kategorie-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shirt-icon lucide-shirt"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></span>
+                <h3>Kleidung</h3>
+                <p>Radsportkleidung, Regenschutz, Schuhe und Alltagskleidung unterwegs.</p>
+                <span class="arrow">Ansehen →</span>
+            </div>
+        </a>
+
+        <a href="ausruestung-technik.html" class="kategorie-card">
+            <div class="kategorie-card-body">
+                <span class="kategorie-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone-icon lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span>
+                <h3>Technik & Navigation</h3>
+                <p>GPS, Kamera, Powerbank, Ladekabel und alles was Strom braucht.</p>
+                <span class="arrow">Ansehen →</span>
+            </div>
+        </a>
+
+        <a href="ausruestung-werkzeug.html" class="kategorie-card">
+            <div class="kategorie-card-body">
+                <span class="kategorie-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg></span>
+                <h3>Werkzeug & Reparatur</h3>
+                <p>Flickzeug, Ersatzschlauch, Multitool und was ich sonst noch dabei habe.</p>
+                <span class="arrow">Ansehen →</span>
+            </div>
+        </a>
+
+        <a href="ausruestung-verpflegung.html" class="kategorie-card">
+            <div class="kategorie-card-body">
+                <span class="kategorie-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils-icon lucide-utensils"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></span>
+                <h3>Verpflegung & Kochen</h3>
+                <p>Kocher, Besteck, Wasserfilter und Proviant für die Strecke.</p>
+                <span class="arrow">Ansehen →</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Kilometer für den Kopf · <a href="index.html" style="color:#4caf50; text-decoration:none;">Zurück zur Hauptseite</a>
+</footer>
+
+</body>
+</html>

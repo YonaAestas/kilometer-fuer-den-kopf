@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="clean-nav">
+    <a href="#" class="nav-logo">
+        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="#projekt">Projekt</a>
+        <a href="#route">Route</a>
+        <a href="#gallery">Galerie</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="#kontakt">Kontakt</a>
+        <!-- Optionaler Call-to-Action Button direkt in der Navi, wie im Template -->
+        <a href="#sponsoring" class="nav-btn">Sponsoring</a>
+    </div>
+</nav>
+
+<!-- Header (Hero Section) -->
+<header class="clean-header">
+    <div class="header-content">
+        <span class="eyecatcher">"Kilometer für den Kopf"</span>
+        
+        <h1>Eine Fahrradreise<br>durch die Alpen</h1>
+        
+        <p>
+           Echte Dokumentation einer Reise zwischen Natur, Bewegung und Alltag.
+        </p>
+        
+        <div class="button-group">
+            <a class="btn btn-filled" href="#projekt">Projekt ansehen &rarr;</a>
+            <a class="btn btn-outline" href="#sponsoring">Unterstützen</a>
+        </div>
+    </div>
+</header>
+
+<section id="journal">
+    <h2>Live Journal</h2>
+
+    <div class="card">
+        <h3>Vorbereitung gestartet</h3>
+        <p>Route definiert, Ausrüstung wird zusammengestellt, erste Testfahrten laufen.</p>
+        <small>Datum: 01.06.2026</small>
+    </div>
+
+    <div class="card" style="margin-top:10px;">
+        <h3>Planungsphase</h3>
+        <p>Fokus liegt aktuell auf Sponsoren, Ausrüstung und Etappenplanung.</p>
+        <small>Datum: laufend</small>
+    </div>
+</section>
+
+<section id="projekt">
+    <h2>Über das Projekt</h2>
+    <p>
+        Dieses Projekt dokumentiert eine mehrtägige Fahrradreise durch den Alpenraum.
+        Ziel ist keine Inszenierung, sondern eine ehrliche Darstellung von Reisen mit echten Bedingungen.
+    </p>
+</section>
+
+<section id="route">
+    <h2>Meine Etappen</h2>
+    
+    <div class="timeline" id="etappen-grid">
+
+        <div class="etappe-card" data-index="0" style="background-image: url('bilder/Gmund.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/DEU_Gmund_am_Tegernsee_COA.svg" alt="Wappen Gmund am Tegernsee" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Gmund am Tegernsee</h3>
+                    <p>Bayern, DE · Start</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="1" style="background-image: url('bilder/Lenggries.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/DEU_Lenggries_COA.svg" alt="Wappen Lenggries" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Lenggries</h3>
+                    <p>Bayern, DE</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="2" style="background-image: url('bilder/Garmisch_Partenkirchen.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/Wappen_Garmisch_Partenkirchen.svg" alt="Wappen Garmisch-Partenkirchen" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Garmisch-Partenkirchen</h3>
+                    <p>Bayern, DE</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="3" style="background-image: url('bilder/Ehrwald.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/Wappen_Ehrwald.svg" alt="Wappen Ehrwald" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Ehrwald</h3>
+                    <p>Tirol, AT</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="4" style="background-image: url('bilder/Imst.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/Wappen_at_imst.svg" alt="Wappen Imst" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Imst</h3>
+                    <p>Tirol, AT</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="5" style="background-image: url('bilder/St. Moritz.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/CHE_St_Moritz_COA.svg" alt="Wappen St. Moritz" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>St. Moritz</h3>
+                    <p>Graubünden, CH</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="6" style="background-image: url('bilder/Chiavenna.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/Chiavenna-Stemma.svg" alt="Wappen Chiavenna" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Chiavenna</h3>
+                    <p>Lombardei, IT</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card" data-index="7" style="background-image: url('bilder/Colico.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/Colico-Stemma.png" alt="Wappen Colico" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Colico</h3>
+                    <p>Lombardei, IT</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">✓ Geschafft</div>
+        </div>
+
+        <div class="etappe-card etappe-ziel" data-index="8" style="background-image: url('bilder/Varenna.jpg');">
+            <div class="etappe-overlay">
+                <img src="bilder/wappen/Varenna-Stemma.svg" alt="Wappen Varenna" class="etappe-wappen">
+                <div class="etappe-info">
+                    <h3>Varenna, Comer See</h3>
+                    <p>Lombardei, IT · Ziel</p>
+                </div>
+            </div>
+            <div class="etappe-done-badge">🏁 Angekommen!</div>
+        </div>
+
+    </div>
+
+    <p class="route-status" id="route-status">
+        Status: Vorbereitung abgeschlossen · Startdatum folgt
+    </p>
+</section>
+
+<section id="gallery">
+    <h2>Galerie</h2>
+    <p>Bilder zu vorherigen Fahrradtouren.</p>
+
+    <div class="gallery-grid">
+        
+        <div class="gallery-card" onclick="openLightbox(0)">
+            <img src="bilder/Gmund_Tegernsee.jpg" alt="Gmund am Tegernsee">
+            <div class="gallery-overlay"><span>Gmund am Tegernsee</span></div>
+        </div>
+        <div class="gallery-card" onclick="openLightbox(1)">
+            <img src="bilder/Sonnenuntergang_Sylvensteinsee.jpg" alt="Sylvensteinsee">
+            <div class="gallery-overlay"><span>Sonnenuntergang am Sylvensteinsee</span></div>
+        </div>
+        <div class="gallery-card" onclick="openLightbox(2)">
+            <img src="bilder/Lüftlmalerei.jpg" alt="Lüftlmalerei">
+            <div class="gallery-overlay"><span>Lüftlmalerei</span></div>
+        </div>
+        <div class="gallery-card" onclick="openLightbox(3)">
+            <img src="bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg" alt="Innsbruck">
+            <div class="gallery-overlay"><span>Innsbruck</span></div>
+        </div>
+        <div class="gallery-card" onclick="openLightbox(4)">
+            <img src="bilder/Mautstraße_Wallgau_Vorderriß.jpg" alt="Mautstraße">
+            <div class="gallery-overlay"><span>Mautstraße Wallgau</span></div>
+        </div>
+        <div class="gallery-card" onclick="openLightbox(5)">
+            <img src="bilder/Kurz_vor_Bad_Tölz.jpg" alt="Kurz vor Bad Tölz">
+            <div class="gallery-overlay"><span>Kurz vor Bad Tölz</span></div>
+        </div>
+        <div class="gallery-card" onclick="openLightbox(6)">
+            <img src="bilder/Österreich_Telfs.png" alt="Österreich Telfs">
+            <div class="gallery-overlay"><span>Österreich – Telfs</span></div>
+        </div>
+
+        <a href="ausruestung.html" class="gallery-card gallery-card-link">
+            <div class="gallery-placeholder">
+                <span class="gallery-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tent-tree-icon lucide-tent-tree"><circle cx="4" cy="4" r="2"/><path d="m14 5 3-3 3 3"/><path d="m14 10 3-3 3 3"/><path d="M17 14V2"/><path d="M17 14H7l-5 8h20Z"/><path d="M8 14v8"/><path d="m9 14 5 8"/></svg></span>
+                <span class="gallery-link-label">Ausrüstung ansehen →</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+<section>
+    <h2>Ziel des Projekts</h2>
+
+    <div class="grid">
+        <div class="card">Authentische Reiseerfahrung</div>
+        <div class="card">Nachhaltige Fortbewegung</div>
+        <div class="card">Dokumentation in Echtzeit</div>
+        <div class="card">Persönliches Langzeitprojekt</div>
+    </div>
+</section>
+
+<section id="sponsoring">
+    <h2>Sponsoring</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Gesucht</h3>
+            <ul>
+                <li>Fahrradzubehör</li>
+                <li>Ersatzteile</li>
+                <li>Outdoor-Bekleidung</li>
+                <li>Kleine Unterstützung unterwegs</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Gegenleistung</h3>
+            <ul>
+                <li>Logo & Erwähnung</li>
+                <li>Reiseberichte</li>
+                <li>Social Media Integration</li>
+                <li>Echte Produkterfahrungen</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="sponsorpdf">
+    <h2>Sponsoring Unterlagen</h2>
+
+    <div class="card">
+        <p>
+            Eine kompakte Übersicht des Projekts für Partner und Unterstützer.
+        </p>
+
+        <a class="btn" href="sponsoring.pdf" download>
+            PDF herunterladen
+        </a>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="form-container">
+        <h2>Kontakt</h2>
+        <p class="section-subtitle">Hast du Fragen zum Projekt oder Interesse an einer Partnerschaft? Schreib mir einfach eine Nachricht.</p>
+        
+        <form action="https://formspree.io/f/your-id" method="POST" class="clean-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="6" placeholder="Deine Nachricht..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-filled form-submit-btn">Nachricht senden</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Kilometer für den Kopf · Fahrradreiseprojekt
+</footer>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <div id="lb-inner" onclick="event.stopPropagation()">
+        <button id="lb-close" onclick="closeLightbox()">✕</button>
+        <button id="lb-prev" onclick="event.stopPropagation(); changeImage(-1)">&#8249;</button>
+        <button id="lb-next" onclick="event.stopPropagation(); changeImage(1)">&#8250;</button>
+        <img id="lb-img" src="" alt="">
+        <p id="lb-caption"></p>
+    </div>
+</div>
+
+<script src="lightbox.js"></script>
+<script src="route.js"></script>
+
+</body>
+</html>
