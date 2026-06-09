@@ -748,3 +748,21 @@ section h2 {
     70%  { transform: scale(1.15); }
     100% { transform: scale(1); opacity: 1; }
 }
+
+/* =========================================
+   MOBILE ANPASSUNG FÜR HEADER BUTTONS
+========================================= */
+@media (max-width: 768px) {
+    .button-group {
+        display: flex;
+        flex-direction: column; /* Setzt die Buttons strikt untereinander */
+        gap: 15px; /* Sorgt für den nötigen Abstand dazwischen */
+        width: 100%; /* Nutzt die verfügbare Breite optimal aus */
+    }
+
+    .button-group .btn {
+        width: 100%; /* Macht beide Buttons gleich breit */
+        text-align: center; /* Zentriert den Text sauber */
+        box-sizing: border-box;
+    }
+}
