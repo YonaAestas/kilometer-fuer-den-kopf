@@ -854,3 +854,18 @@ section h2 {
         box-sizing: border-box;
     }
 }
+
+.footer-social {
+    margin-top: 8px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.footer-social a {
+    color: #3ecf6b;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.footer-social a:hover { opacity: 1; }
