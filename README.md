@@ -1,3 +1,15 @@
+# Kilometer für den Kopf
+
+Dokumentationswebseite einer mehrtägigen Fahrradreise durch die Alpen –  
+von Gmund am Tegernsee bis Varenna am Comer See.
+
+🌐 **[kilometer-fuer-den-kopf.de](https://kilometer-fuer-den-kopf.de)**
+
+---
+
+## Projektstruktur
+
+```
 .
 ├── index.html          ← Hauptseite (muss im Root bleiben!)
 ├── CNAME               ← Custom Domain für GitHub Pages (nicht verschieben!)
@@ -31,3 +43,24 @@
 │
 └── font/
     └── CreatoDisplay-Thin.otf
+```
+
+---
+
+## Etappenfortschritt aktualisieren
+
+Wenn eine Etappe geschafft ist, in `js/route.js` die Zahl ändern:
+
+```js
+const DONE = 0; // 0 = noch nichts, 9 = alle Etappen geschafft
+```
+
+Datei speichern und pushen – Timeline und Karte aktualisieren sich automatisch.
+
+---
+
+## Wichtige Hinweise
+
+- `CNAME`, `robots.txt` und `sitemap.xml` **müssen im Root bleiben** – GitHub Pages und Google suchen diese Dateien nur dort.
+- Pfade in `css/style.css` verwenden `../` um aus dem `css/` Ordner heraus auf andere Dateien zu zeigen.
+- Pfade in `frontend/*.html` verwenden `../` um aus dem `frontend/` Ordner heraus zu navigieren.
