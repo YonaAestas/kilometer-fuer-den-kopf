@@ -77,9 +77,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* Ein weicherer Gradient lässt das Bild besser wirken */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
-                url('/data/bilder/Sonnenuntergang_Sylvensteinsee.jpg') center/cover;
+    url('/data/bilder/Sonnenuntergang_Sylvensteinsee.jpg') center/cover;
     padding: 20px;
 }
 
@@ -91,12 +90,18 @@ body {
 
 /* "Kilometer für den Kopf" – Aushängeschild */
 .eyecatcher {
-    font-style: normal; 
+    display: block;
     font-family: 'ZweiterFont', sans-serif;
-    font-size: 25px;
+    font-size: clamp(2.5rem, 6vw, 5rem); /* Groß, aber responsiv */
+    font-style: italic;
+    font-weight: 700;
     color: #fff;
-    letter-spacing: 4px;
+    /*color: #6DCBAB;           /* Kräftiges Grün wie im Vegan-Design */
+    letter-spacing: 3px;
     text-transform: uppercase;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4); /* Lesbar vor dem Bergfoto */
 }
 
 .clean-header h1 {
@@ -908,3 +913,13 @@ section h2 {
     transition: opacity 0.2s;
 }
 .footer-social a:hover { opacity: 1; }
+
+#projekt p strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+#projekt p {
+    margin-bottom: 20px;    /* Abstand zwischen den Absätzen */
+    color: #bbb;
+}
