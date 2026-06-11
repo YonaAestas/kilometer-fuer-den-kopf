@@ -3,168 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahrrad & Gepäck – Kilometer für den Kopf</title>
-    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <title>Erste Hilfe & Extras – Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="../data/bilder/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        .page-header {
-            padding: 120px 20px 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+        .page-header { padding: 120px 20px 40px; max-width: 900px; margin: auto; }
         .page-header p { color: #aaa; margin-top: 8px; }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: #4caf50;
-            text-decoration: none;
-            font-size: 14px;
-            margin-bottom: 24px;
-            opacity: 0.8;
-            transition: opacity 0.2s;
-        }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: #4caf50; text-decoration: none; font-size: 14px; margin-bottom: 24px; opacity: 0.8; transition: opacity 0.2s; }
         .back-link:hover { opacity: 1; }
-
-        .item-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .item-card:hover {
-            transform: translateY(-3px);
-            background: #222;
-        }
-
-        .item-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .item-placeholder {
-            width: 100%;
-            height: 200px;
-            background: #111;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            border-bottom: 1px solid #222;
-        }
-
+        .item-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .item-card:hover { transform: translateY(-3px); background: #222; }
+        .item-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
         .item-card-body { padding: 16px; }
         .item-card-body h3 { margin: 0 0 6px; font-size: 15px; font-weight: 500; }
         .item-card-body p { margin: 0; font-size: 13px; color: #aaa; line-height: 1.6; }
-
-        .item-tag {
-            display: inline-block;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 20px;
-            background: #1b5e20;
-            color: #a5d6a7;
-            margin-top: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .item-grid { grid-template-columns: 1fr; }
-        }
+        .item-tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 20px; background: #1b5e20; color: #a5d6a7; margin-top: 8px; }
+        @media (max-width: 768px) { .item-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-
 <nav class="clean-nav">
-    <a href="index.html" class="nav-logo">
-        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    <a href="../index.html" class="nav-logo">
+        <img src="../data/bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
     </a>
     <div class="nav-links">
-        <a href="index.html#projekt">Projekt</a>
-        <a href="index.html#route">Route</a>
-        <a href="index.html#karte">Karte</a>
-        <a href="index.html#gallery">Galerie</a>
+        <a href="../index.html#projekt">Projekt</a>
+        <a href="../index.html#route">Route</a>
+        <a href="../index.html#karte">Karte</a>
+        <a href="../index.html#gallery">Galerie</a>
         <a href="ausruestung.html">Ausrüstung</a>
-        <a href="index.html#kontakt">Kontakt</a>
-        <a href="index.html#sponsoring" class="nav-btn">Sponsoring</a>
+        <a href="../index.html#kontakt">Kontakt</a>
+        <a href="../index.html#sponsoring" class="nav-btn">Sponsoring</a>
     </div>
 </nav>
-
 <div class="page-header">
     <a href="ausruestung.html" class="back-link">← Zurück zur Ausrüstung</a>
     <h1>Erste Hilfe & Extras</h1>
     <p>Wichtige Kleinigkeiten.</p>
 </div>
-
 <section>
     <div class="item-grid">
-
         <div class="item-card">
-            <img src="bilder/ausruestung/First_aid_kalff.jpg" alt="FirstAid">
+            <img src="../data/bilder/ausruestung/First_aid_kalff.jpg" alt="FirstAid">
             <div class="item-card-body">
                 <h3>Erste-Hilfe-Set</h3>
-                <p>Kompakt. Wurde über die Jahre etwas ausgeschlachtet. Muss mal aufgeräumt werden. Zusätlich
-                    sind noch zwei Rettungsdecken und eine Zeckenzange mit drinne.
-                </p>
+                <p>Kompakt. Wurde über die Jahre etwas ausgeschlachtet. Muss mal aufgeräumt werden. Zusätzlich sind noch zwei Rettungsdecken und eine Zeckenzange mit drinne.</p>
                 <span class="item-tag">Aua</span>
             </div>
         </div>
-
         <div class="item-card">
-            <img src="bilder/ausruestung/Paper_soap.jpg" alt="Papier-Seife">
+            <img src="../data/bilder/ausruestung/Paper_soap.jpg" alt="Papier-Seife">
             <div class="item-card-body">
                 <h3>Handseife</h3>
-                <p>Camping Seife in Blätter Form. Reisefreundlich, soll auch Umweltfreundlich sein. </p>
+                <p>Camping Seife in Blätter Form. Reisefreundlich, soll auch Umweltfreundlich sein.</p>
                 <span class="item-tag">Waschen</span>
             </div>
         </div>
-
         <div class="item-card">
-            <img src="bilder/ausruestung/Ise_mount.jpg" alt="Wäscheleine">
+            <img src="../data/bilder/ausruestung/Ise_mount.jpg" alt="Wäscheleine">
             <div class="item-card-body">
                 <h3>Wäscheleine</h3>
                 <p>Mini Outdoor Wäscheleine. Schon getestet und bin auch sehr zufrieden damit.</p>
                 <span class="item-tag">Wäsche</span>
             </div>
         </div>
-
         <div class="item-card">
-            <img src="bilder/ausruestung/Bens_invisinet.jpg" alt="Mücken-Mütze">
+            <img src="../data/bilder/ausruestung/Bens_invisinet.jpg" alt="Mücken-Mütze">
             <div class="item-card-body">
                 <h3>Mücken-Mütze</h3>
                 <p>Wenn im Wald mal zu viel los ist.</p>
                 <span class="item-tag">Schutz</span>
             </div>
         </div>
-
         <div class="item-card">
-            <img src="bilder/ausruestung/Faltbare_Teller.jpg" alt="Camping-Dishes">
+            <img src="../data/bilder/ausruestung/Faltbare_Teller.jpg" alt="Camping-Dishes">
             <div class="item-card-body">
                 <h3>Camping-Dishes</h3>
                 <p>Faltbare Teller in verschiedenen Größen.</p>
                 <span class="item-tag">Teller</span>
             </div>
         </div>
-
         <div class="item-card">
-            <img src="bilder/ausruestung/HENGDUAN_Portable_Air_Pump.jpg" alt="Air-Pump">
+            <img src="../data/bilder/ausruestung/HENGDUAN_Portable_Air_Pump.jpg" alt="Air-Pump">
             <div class="item-card-body">
                 <h3>Luft Pumpe</h3>
                 <p>Kleine, elektrische Pumpe. Nicht für Fahrradreifen geeignet.</p>
                 <span class="item-tag">Pumpe</span>
             </div>
         </div>
-        <!-- Weitere Items einfach hier einfügen -->
-
     </div>
 </section>
-
 <footer>
-    © 2026 Kilometer für den Kopf · <a href="index.html" style="color:#4caf50; text-decoration:none;">Zurück zur Hauptseite</a>
+    © 2026 Kilometer für den Kopf · <a href="../index.html" style="color:#4caf50; text-decoration:none;">Zurück zur Hauptseite</a>
 </footer>
-
 </body>
 </html>
