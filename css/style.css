@@ -242,7 +242,7 @@ body {
 
     @font-face {
     font-family: myFont;
-    src: url(font/CreatoDisplay-Thin.otf);
+    src: url(/font/CreatoDisplay-Thin.otf);
     font-weight: normal;
     }
 
