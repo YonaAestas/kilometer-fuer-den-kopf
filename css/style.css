@@ -69,7 +69,7 @@ body {
     text-align: center;
     /* Ein weicherer Gradient lässt das Bild besser wirken */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
-                url('bilder/Sonnenuntergang_Sylvensteinsee.jpg') center/cover;
+                url('/data/bilder/Sonnenuntergang_Sylvensteinsee.jpg') center/cover;
     padding: 20px;
 }
 
