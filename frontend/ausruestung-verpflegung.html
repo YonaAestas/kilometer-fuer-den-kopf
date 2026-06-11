@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrrad & Gepäck – Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+        .page-header {
+            padding: 120px 20px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .page-header p { color: #aaa; margin-top: 8px; }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 24px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 1; }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .item-card:hover {
+            transform: translateY(-3px);
+            background: #222;
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .item-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border-bottom: 1px solid #222;
+        }
+
+        .item-card-body { padding: 16px; }
+        .item-card-body h3 { margin: 0 0 6px; font-size: 15px; font-weight: 500; }
+        .item-card-body p { margin: 0; font-size: 13px; color: #aaa; line-height: 1.6; }
+
+        .item-tag {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background: #1b5e20;
+            color: #a5d6a7;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="clean-nav">
+    <a href="index.html" class="nav-logo">
+        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="index.html#projekt">Projekt</a>
+        <a href="index.html#route">Route</a>
+        <a href="index.html#karte">Karte</a>
+        <a href="index.html#gallery">Galerie</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="index.html#kontakt">Kontakt</a>
+        <a href="index.html#sponsoring" class="nav-btn">Sponsoring</a>
+    </div>
+</nav>
+
+<div class="page-header">
+    <a href="ausruestung.html" class="back-link">← Zurück zur Ausrüstung</a>
+    <h1>Verpflegung & Kochen</h1>
+    <p>Wenn der Hunger durchhängt.</p>
+</div>
+
+<section>
+    <div class="item-grid">
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Tactical_foodpack.jpg" alt="Essen">
+            <div class="item-card-body">
+                <h3>Essen</h3>
+                <p>Trekkingnahrung aus einer kleinen Tüte; schmeckt noch etwas besser mit ein paar persönlichen Gewürzen.
+                    Auf langen Reisen sollte eine ausgewogene Mahlzeit von Vorteil sein. Bananen, Müsli und Nudeln machen
+                    es aber auch.
+                </p>
+                <span class="item-tag">Nahrung</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Dextro_energy.jpg" alt="Zusatz">
+            <div class="item-card-body">
+                <h3>Elektrolyte</h3>
+                <p>Long Distance Gel (Dextro Energie), Science in Sport HYDRO Tabletten oder ein bisschen Magnesium Pulver.
+                    Ich finde, ohne Elektrolyte geht nichts. Das Obrige soll, auf der Reise, durch Precision Fuel PF30 Energy Gels und 
+                SaltSticks ersetzt werden.</p>
+                <span class="item-tag">Zusatz</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Katadyn_befree.jpg" alt="Wasser">
+            <div class="item-card-body">
+                <h3>Filter</h3>
+                <p>Das wichtigste auf der Tour. Katadyn BeFree 1 Liter, 2x 500ml Softflaschen von Arc'teryx und noch eine 1 Liter Softbottle Flasche von Platypus.</p>
+                <span class="item-tag">Wasser</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Primus_easyfuel_rechaud_produit-1.jpg" alt="Kocher">
+            <div class="item-card-body">
+                <h3>Gaskocher</h3>
+                <p>Um das flüssige zu erhitzen. Primus Gas + Easyfuel Piezo Gaskocher von der gleichen Marke. Bisher nur mit Gas gekocht.</p>
+                <span class="item-tag">Gas</span>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <img src="bilder/ausruestung/BW_besteck.jpg" alt="Besteck">
+            <div class="item-card-body">
+                <h3>Göffel</h3>
+                <p>Bundeswehr Besteck als Geschenk erhalten. Lässt sich super klein zusammen klappen und verstauen.</p>
+                <span class="item-tag">Besteck</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Bountless_voyage_Pots.jpg" alt="Kochen">
+            <div class="item-card-body">
+                <h3>Topfpfannen</h3>
+                <p>Outdoor Set von Bountless Voyage zum Kochen. Muss ehrlich gestehen, dass ich diese schmalen Töpfe nicht mag also habe ich mich für einen breiteren Topf entschieden.</p>
+                <span class="item-tag">Topf</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Nordic_wolf_messer.jpg" alt="Messer">
+            <div class="item-card-body">
+                <h3>Messer</h3>
+                <p>Klappmesser mit Holzgriff von Nordic Wolf. Super Edelstahlt Klinge zum präparieren der gewünschten Mahlzeit.</p>
+                <span class="item-tag">Messer</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Nordic_wolf_gewürztäschchen.jpg" alt="Ledertasche">
+            <div class="item-card-body">
+                <h3>Gewürztasche</h3>
+                <p>Gewürztäschchen aus Leder mit 3 Glasfläschchen von Nordic Wolf. Für Gewürze.</p>
+                <span class="item-tag">Gewürze</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="bilder/ausruestung/Arts_nature_holztasse_nordic_style_300ml.jpg" alt="Becher">
+            <div class="item-card-body">
+                <h3>Holztasse</h3>
+                <p>Ein Holzbecher zum trinken aus Holz. Nordischer Stil.</p>
+                <span class="item-tag">Trinken</span>
+            </div>
+        </div>
+        <!-- Weitere Items einfach hier einfügen -->
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Kilometer für den Kopf · <a href="index.html" style="color:#4caf50; text-decoration:none;">Zurück zur Hauptseite</a>
+</footer>
+
+</body>
+</html>

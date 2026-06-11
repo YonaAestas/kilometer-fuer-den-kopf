@@ -1,0 +1,871 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        background: #0f0f0f;
+        color: #f5f5f5;
+        line-height: 1.6;
+    }
+
+.clean-nav {
+    position: absolute; /* Lässt den Hintergrund nahtlos unter die Navi fließen */
+    top: 0;
+    width: 100%;
+    background: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.clean-nav .nav-logo img {
+    height: 45px; 
+    width: auto;
+}
+
+.clean-nav .nav-links {
+    display: flex;
+    gap: 35px; 
+    align-items: center;
+}
+
+.clean-nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.clean-nav .nav-links a:hover {
+    opacity: 1;
+}
+
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* =========================================
+   HEADER - Typografie & Layout
+========================================= */
+.clean-header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Ein weicherer Gradient lässt das Bild besser wirken */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
+                url('bilder/Sonnenuntergang_Sylvensteinsee.jpg') center/cover;
+    padding: 20px;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Kleiner Text über der Überschrift */
+.eyecatcher {
+    display: block;
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.clean-header h1 {
+    font-size: 3.5rem;
+    font-weight: 300; 
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    color: #fff;
+    border: none;
+}
+
+.clean-header p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin: 0 auto 40px auto;
+    max-width: 550px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+/* =========================================
+   BUTTONS - Einheitliches System
+========================================= */
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 1. BASIS-STYLING (Muss zwingend als Erstes stehen!) */
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Entfernt den unnötigen Abstand nach oben im Header */
+.button-group .btn {
+    margin-top: 0;
+}
+
+/* 2. FARBEN & VARIANTEN (Stehen UNTER der Basis und überschreiben diese) */
+.btn-filled {
+    background: #4a6b53; 
+    border: 1px solid #4a6b53;
+}
+
+.btn-filled:hover {
+    background: #3a5441;
+    border-color: #3a5441;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+/* =========================================
+   MOBILE ANPASSUNGEN
+========================================= */
+@media (max-width: 768px) {
+    .clean-header h1 { 
+        font-size: 2.2rem; 
+    }
+    
+    .clean-nav { 
+        flex-direction: column; 
+        padding: 15px; 
+        background: rgba(0,0,0,0.85); /* Auf Mobile wieder abdunkeln für Lesbarkeit */
+        position: fixed;
+    }
+    .clean-nav .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+    section {
+        padding: 80px 20px;
+        max-width: 900px;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+    .route-map {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    input, textarea {
+        width: 97%;
+        padding: 10px;
+        margin-top: 10px;
+        background: #111;
+        border: 1px solid #333;
+        color: white;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        background: #000;
+        color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+        header h1 { font-size: 2rem; }
+        .grid { grid-template-columns: 1fr; }
+        nav { flex-wrap: wrap; }
+    }
+
+    section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.8s forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .logo {
+    width: min(300px, 60vw);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: -80px;  /* ← Logo nach oben schieben */
+    }
+
+    @font-face {
+    font-family: myFont;
+    src: url(font/CreatoDisplay-Thin.otf);
+    }
+
+    @font-face {
+    font-family: myFont;
+    src: url(font/CreatoDisplay-Thin.otf);
+    font-weight: normal;
+    }
+
+    * {
+    font-family: myFont;
+    letter-spacing: 1px;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f0f0f; }
+    ::-webkit-scrollbar-thumb { background: #4caf50; border-radius: 3px; }
+
+    .gallery-card img {
+        width: 100%;
+        border-radius: 6px;
+        object-fit: cover;
+        height: 200px;
+    }
+
+
+
+    /* GALERIE GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.gallery-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 16/10;
+    background: #1a1a1a;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 14px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    color: #fff;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Ausrüstungs-Link-Card */
+.gallery-card-link {
+    text-decoration: none;
+    border: 1px dashed #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.gallery-card-link:hover {
+    border-color: #4caf50;
+    background: #111;
+}
+
+.gallery-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.gallery-icon {
+    font-size: 32px;
+    color: #4caf50;
+}
+
+.gallery-link-label {
+    color: #4caf50;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* LIGHTBOX */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#lightbox.active {
+    display: flex;
+}
+
+#lb-inner {
+    position: relative;
+    max-width: 85vw;
+    max-height: 85vh;
+    text-align: center;
+}
+
+#lb-img {
+    max-width: 100%;
+    max-height: 78vh;
+    border-radius: 8px;
+    object-fit: contain;
+    display: block;
+}
+
+#lb-caption {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* X-Button: oben rechts vom Bild, nicht vom Fenster */
+#lb-close {
+    position: absolute;
+    top: -36px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Pfeile: links/rechts vom lb-inner, nicht vom Fenster */
+#lb-prev, #lb-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.08);
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+#lb-prev:hover, #lb-next:hover {
+    background: rgba(76,175,80,0.3);
+}
+
+#lb-prev { left: -60px; }
+#lb-next { right: -60px; }
+
+@media (max-width: 768px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+}
+/* =========================================
+   KONTAKTFORMULAR - Elegant & Zentriert
+========================================= */
+#kontakt {
+    padding: 100px 20px;
+    background: #0f0f0f;
+}
+
+.form-container {
+    max-width: 600px; /* Begrenzt die Breite auf großen Bildschirmen */
+    margin: 0 auto;   /* Zentriert das gesamte Formular */
+    text-align: center;
+}
+
+/* Untertitel für mehr Kontext (Freiraum) */
+.section-subtitle {
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.clean-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Einheitlicher Abstand zwischen den Feldern */
+}
+
+.form-group {
+    width: 100%;
+}
+
+/* Eingabefelder Styling */
+.clean-form input[type="text"],
+.clean-form input[type="email"],
+.clean-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.03); /* Ganz leicht transparenter Hintergrund */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Dezent angedeuteter Rand */
+    border-radius: 8px; /* Leicht abgerundete Ecken für moderne Optik */
+    padding: 16px 20px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+/* Platzhalter-Text weicher machen */
+.clean-form ::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Fokus-Effekt beim Anklicken eines Feldes */
+.clean-form input:focus,
+.clean-form textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #4a6b53; /* Nutzt dein neues Waldgrün als sanften Leuchteffekt */
+    box-shadow: 0 0 10px rgba(74, 107, 83, 0.15);
+}
+
+/* Verhindert, dass die Textarea unschön das Layout zerschießt beim Skalieren */
+.clean-form textarea {
+    resize: vertical;
+}
+
+/* Der Absendebutton */
+.form-submit-btn {
+    align-self: center; /* Zentriert den Button unter dem Formular */
+    min-width: 200px;
+    cursor: pointer;
+    font-weight: 400;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+   SEKTIONS-ÜBERSCHRIFTEN - Ruhiger & eleganter
+========================================= */
+section h2 {
+    border-left: 3px solid #4a6b53;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   GRID & KARTEN (Cards) - Mehr Tiefe & Freiraum
+========================================= */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.02); /* Extrem dezente Aufhellung statt massivem Grau */
+    border: 1px solid rgba(255, 255, 255, 0.06); /* Feiner, edler Rahmen trennt die Karte vom Hintergrund */
+    padding: 35px 30px; /* Mehr innerer Freiraum (Whitespace) */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Leichter Schatten für subtile Tiefe */
+    transition: all 0.4s ease; /* Geschmeidigerer Übergang für den Hover */
+}
+
+/* Typografie innerhalb der Karten anpassen */
+.card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card p, 
+.card ul {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.card ul {
+    padding-left: 20px; /* Eingerückte Listen für "Gesucht/Gegenleistung" */
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   HOVER-EFFEKT - Sanftes Leuchten
+========================================= */
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.04);
+    /* Der Rahmen leuchtet minimal waldgrün auf, passend zu den Buttons */
+    border-color: rgba(74, 107, 83, 0.4); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive: Auf dem Handy untereinander */
+@media (max-width: 768px) {
+    .grid { 
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}
+/* =========================================
+   PRODUKTBILDER - Dark Mode Harmonie (Unterseiten)
+========================================= */
+.item-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Zieht einen feinen Strich zwischen Bild und Text */
+    
+    /* Der Filter-Trick für den Studio-Look */
+    filter: brightness(0.75) contrast(1.1) grayscale(0.15); 
+    transition: all 0.4s ease;
+    background: #0f0f0f; 
+}
+
+/* Bild leuchtet auf, wenn man mit der Maus über die gesamte Karte fährt */
+.item-card:hover img {
+    filter: brightness(1) contrast(1) grayscale(0);
+}
+
+/* =========================================
+   TIMELINE - Etappe mit Bild & Wappen
+========================================= */
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.etappe-card {
+    position: relative;
+    height: 250px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1a1a; /* Fallback-Farbe */
+    overflow: hidden;
+    border: none;
+    transition: transform 0.4s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.etappe-card:hover {
+    transform: scale(1.02);
+}
+
+/* Dunkles Overlay unten, damit der Text lesbar ist */
+.etappe-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.95));
+    display: flex;
+    align-items: center; /* Zentriert Wappen und Text auf exakt einer Linie */
+    gap: 15px; /* Abstand zwischen Wappen und Text */
+    box-sizing: border-box;
+}
+
+/* =========================================
+   DAS MACHTWORT FÜR DIE WAPPEN
+========================================= */
+.etappe-wappen {
+    width: 45px !important;  /* Zwingt das Wappen auf diese Breite */
+    height: 45px !important; /* Zwingt das Wappen auf diese Höhe */
+    object-fit: contain;     /* Passt das Bild sauber in die 45x45 Box an, ohne es zu verzerren! */
+    flex-shrink: 0;          /* Verhindert, dass das Wappen durch langen Text zerquetscht wird */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6)); /* Gibt den Wappen einen leichten 3D-Schatten */
+}
+
+/* Typografie der Etappen-Texte */
+.etappe-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etappe-info h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.3rem;
+    color: #fff;
+    border: none;
+}
+
+.etappe-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4caf50;
+    font-weight: 600;
+}
+
+/* Badge "✓ Geschafft" – standardmäßig versteckt */
+.etappe-done-badge {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #3ecf6b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Karte ist "geschafft" */
+.etappe-card.done .etappe-done-badge {
+    display: block;
+    animation: badge-pop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Wappen-Einblend-Animation bei geschaffter Etappe */
+.etappe-card .etappe-wappen {
+    opacity: 1; /* Auf 1 gesetzt für volle Deckkraft */
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: scale(1); /* Auf 1 gesetzt für normale Größe */
+}
+.etappe-card.done .etappe-wappen {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Zukünftige Etappen sind leicht gedimmt */
+.etappe-card.future {
+    opacity: 0.5;
+    filter: grayscale(60%);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+.etappe-card.future:hover {
+    opacity: 0.65;
+    filter: grayscale(30%);
+}
+
+/* Aktuelle (nächste) Etappe – leichter grüner Rahmen */
+.etappe-card.next {
+    outline: 2px solid rgba(62, 207, 107, 0.6);
+    outline-offset: -2px;
+}
+
+/* Ziel-Etappe bekommt goldenen Badge wenn fertig */
+.etappe-card.etappe-ziel.done .etappe-done-badge {
+    background: #e6a817;
+}
+
+/* Statuszeile */
+.route-status {
+    margin-top: 16px;
+    color: #aaa;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Badge-Animation */
+@keyframes badge-pop {
+    0%   { transform: scale(0.5); opacity: 0; }
+    70%  { transform: scale(1.15); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* =========================================
+   MOBILE ANPASSUNG FÜR HEADER BUTTONS
+========================================= */
+@media (max-width: 768px) {
+    .button-group {
+        display: flex;
+        flex-direction: column; /* Setzt die Buttons strikt untereinander */
+        gap: 15px; /* Sorgt für den nötigen Abstand dazwischen */
+        width: 100%; /* Nutzt die verfügbare Breite optimal aus */
+    }
+
+    .button-group .btn {
+        width: 100%; /* Macht beide Buttons gleich breit */
+        text-align: center; /* Zentriert den Text sauber */
+        box-sizing: border-box;
+    }
+}
+
+/* ============================================================
+   KARTE – in style.css einfügen
+   ============================================================ */
+
+#route-map {
+    width: 100%;
+    height: 480px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    margin-top: 16px;
+}
+
+/* Leaflet Popup ans dunkle Design anpassen */
+.leaflet-popup-content-wrapper {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.leaflet-popup-tip {
+    background: #1a1a1a;
+}
+.leaflet-popup-content {
+    margin: 10px 14px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.leaflet-popup-content strong {
+    color: #3ecf6b;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* =========================================
+   ZURÜCK NACH OBEN BUTTON (FLOATING)
+========================================= */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgba(74, 107, 83, 0.7); /* Waldgrün, leicht transparent */
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 41px; /* Zentriert den Pfeil */
+    font-size: 22px;
+    border-radius: 50%; /* Macht den Button kreisrund */
+    text-decoration: none;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+#back-to-top:hover {
+    /*background-color: #4caf50;*/
+    transform: translateY(-3px); /* Kleiner Sprung-Effekt nach oben */
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+/* Auf dem Handy etwas unauffälliger platzieren */
+@media (max-width: 768px) {
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+}
+
+/* =========================================
+   MOBILE ANPASSUNG FÜR HEADER BUTTONS
+========================================= */
+@media (max-width: 768px) {
+    .button-group {
+        display: flex;
+        flex-direction: column; /* Setzt die Buttons strikt untereinander */
+        gap: 15px; /* Sorgt für den nötigen Abstand dazwischen */
+        width: 100%; /* Nutzt die verfügbare Breite optimal aus */
+    }
+
+    .button-group .btn {
+        width: 100%; /* Macht beide Buttons gleich breit */
+        text-align: center; /* Zentriert den Text sauber */
+        box-sizing: border-box;
+    }
+}
+
+.footer-social {
+    margin-top: 8px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.footer-social a {
+    color: #3ecf6b;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.footer-social a:hover { opacity: 1; }
