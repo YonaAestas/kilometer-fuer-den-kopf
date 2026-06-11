@@ -13,16 +13,24 @@ body {
     }
 
 .clean-nav {
-    position: absolute; /* Lässt den Hintergrund nahtlos unter die Navi fließen */
+    position: fixed; /* fixed statt absolute – bleibt beim Scrollen oben */
     top: 0;
     width: 100%;
-    background: transparent; 
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 50px;
     z-index: 1000;
     box-sizing: border-box;
+    transition: background 0.4s ease, padding 0.4s ease; /* Sanfter Übergang */
+}
+
+/* Wenn gescrollt wird – leichter dunkler Hintergrund */
+.clean-nav.scrolled {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); /* Glaseffekt – sieht sehr schick aus */
+    padding: 15px 50px; /* Nav wird etwas kompakter */
 }
 
 .clean-nav .nav-logo img {
@@ -174,11 +182,14 @@ section h2 {
 /* =========================================
    MOBILE ANPASSUNGEN
 ========================================= */
+/* Mobile – immer dunkler Hintergrund */
 @media (max-width: 768px) {
-    .clean-header h1 { 
-        font-size: 2.2rem; 
+    .clean-nav {
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(10px);
+        padding: 15px;
     }
-    
+}    
     .clean-nav { 
         flex-direction: column; 
         padding: 15px; 
