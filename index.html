@@ -4,40 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kilometer für den Kopf</title>
-    <link rel="icon" type="image/png" href="bilder/favicon.png">
+    <link rel="icon" type="image/png" href="data/bilder/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 
-<!-- Navigation -->
 <nav class="clean-nav">
     <a href="#" class="nav-logo">
-        <img src="bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+        <img src="data/bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
     </a>
     <div class="nav-links">
         <a href="#projekt">Projekt</a>
         <a href="#route">Route</a>
         <a href="#karte">Karte</a>
         <a href="#gallery">Galerie</a>
-        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="frontend/ausruestung.html">Ausrüstung</a>
         <a href="#kontakt">Kontakt</a>
         <a href="#sponsoring" class="nav-btn">Sponsoring</a>
     </div>
 </nav>
 
-<!-- Header (Hero Section) -->
 <header class="clean-header">
     <div class="header-content">
         <span class="eyecatcher">"Kilometer für den Kopf"</span>
-        
         <h1>Eine Fahrradreise<br>durch die Alpen</h1>
-        
-        <p>
-           Echte Dokumentation einer Reise zwischen Natur, Bewegung und Alltag.
-        </p>
-        
+        <p>Echte Dokumentation einer Reise zwischen Natur, Bewegung und Alltag.</p>
         <div class="button-group">
             <a class="btn btn-filled" href="#projekt">Projekt ansehen &rarr;</a>
             <a class="btn btn-outline" href="#sponsoring">Unterstützen</a>
@@ -47,13 +40,11 @@
 
 <section id="journal">
     <h2>Live Journal</h2>
-
     <div class="card">
         <h3>Vorbereitung gestartet</h3>
         <p>Route definiert, Ausrüstung wird zusammengestellt, erste Testfahrten laufen.</p>
         <small>Datum: 01.06.2026</small>
     </div>
-
     <div class="card" style="margin-top:10px;">
         <h3>Planungsphase</h3>
         <p>Fokus liegt aktuell auf Sponsoren, Ausrüstung und Etappenplanung.</p>
@@ -64,7 +55,7 @@
 <section id="projekt">
     <h2>Über das Projekt</h2>
     <p>
-       "Kilometer für den Kopf" ist eine mehrtägige Fahrradreise durch den Alpenraum – von Gmund am Tegernsee bis nach Varenna am Comer See. Keine organisierte Tour, kein perfekter Reisebericht. Nur ein Fahrrad, eine Route und eine ehrliche Dokumentation von dem was unterwegs passiert.
+        "Kilometer für den Kopf" ist eine mehrtägige Fahrradreise durch den Alpenraum – von Gmund am Tegernsee bis nach Varenna am Comer See. Keine organisierte Tour, kein perfekter Reisebericht. Nur ein Fahrrad, eine Route und eine ehrliche Dokumentation von dem was unterwegs passiert.
         Hinter dem Namen steckt mehr als Sport. Ich lebe mit Depression – und Fahrradfahren ist eines der wirkungsvollsten Dinge die ich kenne um damit umzugehen. Auf dem Fahrrad bin ich ausgeglichen, konzentriert und endlich mal wirklich gefordert. Das ist kein Geheimnis und kein Grund für Mitleid. Es ist einfach ein Teil von mir.
         Diese Reise soll zeigen: Hinter dem nächsten Berg passiert nichts Schlimmes. Man braucht keine Angst vor dem Unbekannten. Manchmal reicht es einfach, loszufahren.
     </p>
@@ -72,170 +63,123 @@
 
 <section id="route">
     <h2>Meine Etappen</h2>
-    
     <div class="timeline" id="etappen-grid">
-
-        <div class="etappe-card" data-index="0" style="background-image: url('bilder/Gmund.jpg');">
+        <div class="etappe-card" data-index="0" style="background-image: url('data/bilder/Gmund.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/DEU_Gmund_am_Tegernsee_COA.svg" alt="Wappen Gmund am Tegernsee" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Gmund am Tegernsee</h3>
-                    <p>Bayern, DE · Start</p>
-                </div>
+                <img src="data/bilder/wappen/DEU_Gmund_am_Tegernsee_COA.svg" alt="Wappen Gmund am Tegernsee" class="etappe-wappen">
+                <div class="etappe-info"><h3>Gmund am Tegernsee</h3><p>Bayern, DE · Start</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="1" style="background-image: url('bilder/Lenggries.jpg');">
+        <div class="etappe-card" data-index="1" style="background-image: url('data/bilder/Lenggries.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/DEU_Lenggries_COA.svg" alt="Wappen Lenggries" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Lenggries</h3>
-                    <p>Bayern, DE</p>
-                </div>
+                <img src="data/bilder/wappen/DEU_Lenggries_COA.svg" alt="Wappen Lenggries" class="etappe-wappen">
+                <div class="etappe-info"><h3>Lenggries</h3><p>Bayern, DE</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="2" style="background-image: url('bilder/Garmisch_Partenkirchen.jpg');">
+        <div class="etappe-card" data-index="2" style="background-image: url('data/bilder/Garmisch_Partenkirchen.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/Wappen_Garmisch_Partenkirchen.svg" alt="Wappen Garmisch-Partenkirchen" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Garmisch-Partenkirchen</h3>
-                    <p>Bayern, DE</p>
-                </div>
+                <img src="data/bilder/wappen/Wappen_Garmisch_Partenkirchen.svg" alt="Wappen Garmisch-Partenkirchen" class="etappe-wappen">
+                <div class="etappe-info"><h3>Garmisch-Partenkirchen</h3><p>Bayern, DE</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="3" style="background-image: url('bilder/Ehrwald.jpg');">
+        <div class="etappe-card" data-index="3" style="background-image: url('data/bilder/Ehrwald.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/Wappen_Ehrwald.svg" alt="Wappen Ehrwald" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Ehrwald</h3>
-                    <p>Tirol, AT</p>
-                </div>
+                <img src="data/bilder/wappen/Wappen_Ehrwald.svg" alt="Wappen Ehrwald" class="etappe-wappen">
+                <div class="etappe-info"><h3>Ehrwald</h3><p>Tirol, AT</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="4" style="background-image: url('bilder/Imst.jpg');">
+        <div class="etappe-card" data-index="4" style="background-image: url('data/bilder/Imst.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/Wappen_at_imst.svg" alt="Wappen Imst" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Imst</h3>
-                    <p>Tirol, AT</p>
-                </div>
+                <img src="data/bilder/wappen/Wappen_at_imst.svg" alt="Wappen Imst" class="etappe-wappen">
+                <div class="etappe-info"><h3>Imst</h3><p>Tirol, AT</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="5" style="background-image: url('bilder/St. Moritz.jpg');">
+        <div class="etappe-card" data-index="5" style="background-image: url('data/bilder/St. Moritz.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/CHE_St_Moritz_COA.svg" alt="Wappen St. Moritz" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>St. Moritz</h3>
-                    <p>Graubünden, CH</p>
-                </div>
+                <img src="data/bilder/wappen/CHE_St_Moritz_COA.svg" alt="Wappen St. Moritz" class="etappe-wappen">
+                <div class="etappe-info"><h3>St. Moritz</h3><p>Graubünden, CH</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="6" style="background-image: url('bilder/Chiavenna.jpg');">
+        <div class="etappe-card" data-index="6" style="background-image: url('data/bilder/Chiavenna.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/Chiavenna-Stemma.svg" alt="Wappen Chiavenna" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Chiavenna</h3>
-                    <p>Lombardei, IT</p>
-                </div>
+                <img src="data/bilder/wappen/Chiavenna-Stemma.svg" alt="Wappen Chiavenna" class="etappe-wappen">
+                <div class="etappe-info"><h3>Chiavenna</h3><p>Lombardei, IT</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card" data-index="7" style="background-image: url('bilder/Colico.jpg');">
+        <div class="etappe-card" data-index="7" style="background-image: url('data/bilder/Colico.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/Colico-Stemma.png" alt="Wappen Colico" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Colico</h3>
-                    <p>Lombardei, IT</p>
-                </div>
+                <img src="data/bilder/wappen/Colico-Stemma.png" alt="Wappen Colico" class="etappe-wappen">
+                <div class="etappe-info"><h3>Colico</h3><p>Lombardei, IT</p></div>
             </div>
             <div class="etappe-done-badge">✓ Geschafft</div>
         </div>
-
-        <div class="etappe-card etappe-ziel" data-index="8" style="background-image: url('bilder/Varenna.jpg');">
+        <div class="etappe-card etappe-ziel" data-index="8" style="background-image: url('data/bilder/Varenna.jpg');">
             <div class="etappe-overlay">
-                <img src="bilder/wappen/Varenna-Stemma.svg" alt="Wappen Varenna" class="etappe-wappen">
-                <div class="etappe-info">
-                    <h3>Varenna, Comer See</h3>
-                    <p>Lombardei, IT · Ziel</p>
-                </div>
+                <img src="data/bilder/wappen/Varenna-Stemma.svg" alt="Wappen Varenna" class="etappe-wappen">
+                <div class="etappe-info"><h3>Varenna, Comer See</h3><p>Lombardei, IT · Ziel</p></div>
             </div>
             <div class="etappe-done-badge">🏁 Angekommen!</div>
         </div>
-
     </div>
-
-    <p class="route-status" id="route-status">
-        Status: Vorbereitung abgeschlossen · Startdatum folgt
-    </p>
+    <p class="route-status" id="route-status">Status: Vorbereitung abgeschlossen · Startdatum folgt</p>
 </section>
 
 <section id="karte">
     <h2>Die Route</h2>
     <p class="section-subtitle">Von Gmund am Tegernsee bis Varenna am Comer See – ~450 km durch die Alpen.</p>
-
     <div id="route-map"></div>
 </section>
-    
+
 <section id="gallery">
     <h2>Galerie</h2>
     <p>Bilder zu vorherigen Fahrradtouren.</p>
-
     <div class="gallery-grid">
-        
         <div class="gallery-card" onclick="openLightbox(0)">
-            <img src="bilder/Gmund_Tegernsee.jpg" alt="Gmund am Tegernsee">
+            <img src="data/bilder/Gmund_Tegernsee.jpg" alt="Gmund am Tegernsee">
             <div class="gallery-overlay"><span>Gmund am Tegernsee</span></div>
         </div>
         <div class="gallery-card" onclick="openLightbox(1)">
-            <img src="bilder/Sonnenuntergang_Sylvensteinsee.jpg" alt="Sylvensteinsee">
+            <img src="data/bilder/Sonnenuntergang_Sylvensteinsee.jpg" alt="Sylvensteinsee">
             <div class="gallery-overlay"><span>Sonnenuntergang am Sylvensteinsee</span></div>
         </div>
         <div class="gallery-card" onclick="openLightbox(2)">
-            <img src="bilder/Lüftlmalerei.jpg" alt="Lüftlmalerei">
+            <img src="data/bilder/Lüftlmalerei.jpg" alt="Lüftlmalerei">
             <div class="gallery-overlay"><span>Lüftlmalerei</span></div>
         </div>
         <div class="gallery-card" onclick="openLightbox(3)">
-            <img src="bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg" alt="Innsbruck">
+            <img src="data/bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg" alt="Innsbruck">
             <div class="gallery-overlay"><span>Innsbruck</span></div>
         </div>
         <div class="gallery-card" onclick="openLightbox(4)">
-            <img src="bilder/Mautstraße_Wallgau_Vorderriß.jpg" alt="Mautstraße">
+            <img src="data/bilder/Mautstraße_Wallgau_Vorderriß.jpg" alt="Mautstraße">
             <div class="gallery-overlay"><span>Mautstraße Wallgau</span></div>
         </div>
         <div class="gallery-card" onclick="openLightbox(5)">
-            <img src="bilder/Kurz_vor_Bad_Tölz.jpg" alt="Kurz vor Bad Tölz">
+            <img src="data/bilder/Kurz_vor_Bad_Tölz.jpg" alt="Kurz vor Bad Tölz">
             <div class="gallery-overlay"><span>Kurz vor Bad Tölz</span></div>
         </div>
         <div class="gallery-card" onclick="openLightbox(6)">
-            <img src="bilder/Österreich_Telfs.png" alt="Österreich Telfs">
+            <img src="data/bilder/Österreich_Telfs.png" alt="Österreich Telfs">
             <div class="gallery-overlay"><span>Österreich – Telfs</span></div>
         </div>
-
-        <a href="ausruestung.html" class="gallery-card gallery-card-link">
+        <a href="frontend/ausruestung.html" class="gallery-card gallery-card-link">
             <div class="gallery-placeholder">
-                <span class="gallery-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tent-tree-icon lucide-tent-tree"><circle cx="4" cy="4" r="2"/><path d="m14 5 3-3 3 3"/><path d="m14 10 3-3 3 3"/><path d="M17 14V2"/><path d="M17 14H7l-5 8h20Z"/><path d="M8 14v8"/><path d="m9 14 5 8"/></svg></span>
+                <span class="gallery-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="4" cy="4" r="2"/><path d="m14 5 3-3 3 3"/><path d="m14 10 3-3 3 3"/><path d="M17 14V2"/><path d="M17 14H7l-5 8h20Z"/><path d="M8 14v8"/><path d="m9 14 5 8"/></svg></span>
                 <span class="gallery-link-label">Ausrüstung ansehen →</span>
             </div>
         </a>
     </div>
 </section>
 
-
 <section>
     <h2>Ziel des Projekts</h2>
-
     <div class="grid">
         <div class="card">Authentische Reiseerfahrung</div>
         <div class="card">Nachhaltige Fortbewegung</div>
@@ -246,7 +190,6 @@
 
 <section id="sponsoring">
     <h2>Sponsoring</h2>
-
     <div class="grid">
         <div class="card">
             <h3>Gesucht</h3>
@@ -257,7 +200,6 @@
                 <li>Kleine Unterstützung unterwegs</li>
             </ul>
         </div>
-
         <div class="card">
             <h3>Gegenleistung</h3>
             <ul>
@@ -272,15 +214,9 @@
 
 <section id="sponsorpdf">
     <h2>Sponsoring Unterlagen</h2>
-
     <div class="card">
-        <p>
-            Eine kompakte Übersicht des Projekts für Partner und Unterstützer.
-        </p>
-
-        <a class="btn" href="sponsoring.pdf" download>
-            PDF herunterladen
-        </a>
+        <p>Eine kompakte Übersicht des Projekts für Partner und Unterstützer.</p>
+        <a class="btn" href="data/pdf/sponsoring.pdf" download>PDF herunterladen</a>
     </div>
 </section>
 
@@ -288,7 +224,6 @@
     <div class="form-container">
         <h2>Kontakt</h2>
         <p class="section-subtitle">Hast du Fragen zum Projekt oder Interesse an einer Partnerschaft? Schreib mir einfach eine Nachricht.</p>
-        
         <form action="https://formspree.io/f/mqeoqorw" method="POST" class="clean-form">
             <div class="form-group">
                 <input type="text" name="name" placeholder="Name" required>
@@ -308,7 +243,6 @@
     © 2026 Kilometer für den Kopf · Fahrradreiseprojekt
     <div class="footer-social">
         <a href="https://www.komoot.com/de-de/user/2616604832355" target="_blank">Komoot</a>
-        <!--<a href="https://www.instagram.com/deinaccount" target="_blank">Instagram</a>-->
     </div>
 </footer>
 
@@ -322,13 +256,13 @@
     </div>
 </div>
 
-<script src="lightbox.js"></script>
-<script src="route.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/route.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="route_data.js"></script>
-<script src="karte.js"></script>  
+<script src="js/route_data.js"></script>
+<script src="js/karte.js"></script>
 
 <a href="#" id="back-to-top" title="Nach oben">↑</a>
-    
+
 </body>
 </html>
