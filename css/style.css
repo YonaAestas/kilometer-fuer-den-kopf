@@ -79,8 +79,20 @@ body {
     animation: fadeIn 1.2s ease-out;
 }
 
-/* Kleiner Text über der Überschrift */
+/* "Kilometer für den Kopf" – Aushängeschild */
 .eyecatcher {
+    display: block;
+    font-size: 22px;        /* vorher 13px */
+    color: #fff;            /* vorher #ccc */
+    margin-bottom: 16px;
+    font-style: normal;     /* vorher italic */
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.95;
+}
+
+/* H1 etwas kleiner damit eyecatcher mehr Raum bekommt */
     display: italic;
     font-size: 13px;
     color: #ccc;
@@ -90,12 +102,22 @@ body {
 }
 
 .clean-header h1 {
-    font-size: 3.5rem;
-    font-weight: 300; 
+    font-size: 3rem;        /* vorher 3.5rem */
+    font-weight: 300;
     margin: 0 0 20px 0;
     line-height: 1.2;
     color: #fff;
     border: none;
+}
+
+/* Fließtext allgemein lesbarer */
+body {
+    font-size: 16px;        /* explizit setzen */
+    line-height: 1.7;       /* vorher 1.6 */
+}
+
+section h2 {
+    font-size: 1.8rem;      /* vorher 2rem, lesbarer auf Mobile */
 }
 
 .clean-header p {
