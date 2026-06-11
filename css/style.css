@@ -81,24 +81,11 @@ body {
 
 /* "Kilometer für den Kopf" – Aushängeschild */
 .eyecatcher {
-    display: block;
-    font-size: 22px;        /* vorher 13px */
-    color: #fff;            /* vorher #ccc */
-    margin-bottom: 16px;
-    font-style: normal;     /* vorher italic */
-    font-weight: 600;
+    font-style: italic;     /* wieder kursiv */
+    font-size: 22px;
+    color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
-    opacity: 0.95;
-}
-
-/* H1 etwas kleiner damit eyecatcher mehr Raum bekommt */
-    display: italic;
-    font-size: 13px;
-    color: #ccc;
-    margin-bottom: 20px;
-    font-style: italic;
-    letter-spacing: 2px;
 }
 
 .clean-header h1 {
