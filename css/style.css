@@ -81,7 +81,7 @@ body {
 
 /* Kleiner Text über der Überschrift */
 .eyecatcher {
-    display: block;
+    display: italic;
     font-size: 13px;
     color: #ccc;
     margin-bottom: 20px;
