@@ -1,10 +1,10 @@
 const images = [
-    { src: "bilder/Gmund_Tegernsee.jpg",                                caption: "Gmund am Tegernsee" },
-    { src: "bilder/Sonnenuntergang_Sylvensteinsee.jpg",                 caption: "Sonnenuntergang am Sylvensteinsee" },
-    { src: "bilder/Lüftlmalerei.jpg",                                   caption: "Lüftlmalerei" },
-    { src: "bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg", caption: "Innsbruck" },
-    { src: "bilder/Mautstraße_Wallgau_Vorderriß.jpg",                  caption: "Mautstraße Wallgau" },
-    { src: "bilder/Kurz_vor_Bad_Tölz.jpg",                             caption: "Kurz vor Bad Tölz" },
+    { src: "data/bilder/Gmund_Tegernsee.jpg",                                caption: "Gmund am Tegernsee" },
+    { src: "data/bilder/Sonnenuntergang_Sylvensteinsee.jpg",                 caption: "Sonnenuntergang am Sylvensteinsee" },
+    { src: "data/bilder/Lüftlmalerei.jpg",                                   caption: "Lüftlmalerei" },
+    { src: "data/bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg", caption: "Innsbruck" },
+    { src: "data/bilder/Mautstraße_Wallgau_Vorderriß.jpg",                  caption: "Mautstraße Wallgau" },
+    { src: "data/bilder/Kurz_vor_Bad_Tölz.jpg",                             caption: "Kurz vor Bad Tölz" },
     { src: "bilder/Österreich_Telfs.png",                               caption: "Österreich – Telfs" }
 ];
 
