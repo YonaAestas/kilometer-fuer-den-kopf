@@ -91,7 +91,8 @@ body {
 
 /* "Kilometer für den Kopf" – Aushängeschild */
 .eyecatcher {
-    font-style: italic;     /* wieder kursiv */
+    font-style: italic; 
+    font-family: 'ZweiterFont', sans-serif;
     font-size: 22px;
     color: #fff;
     letter-spacing: 4px;
@@ -266,6 +267,12 @@ section h2 {
     @font-face {
     font-family: myFont;
     src: url(/font/CreatoDisplay-Thin.otf);
+    font-weight: normal;
+    }
+
+    @font-face {
+    font-family: 'ZweiterFont';
+    src: url('../font/Mangelo.otf');
     font-weight: normal;
     }
 
