@@ -677,11 +677,11 @@ section h2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.95));
+    padding: 24px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.92));
     display: flex;
     align-items: center; /* Zentriert Wappen und Text auf exakt einer Linie */
-    gap: 15px; /* Abstand zwischen Wappen und Text */
+    gap: 16px; /* Abstand zwischen Wappen und Text */
     box-sizing: border-box;
 }
 
@@ -689,8 +689,8 @@ section h2 {
    DAS MACHTWORT FÜR DIE WAPPEN
 ========================================= */
 .etappe-wappen {
-    width: 45px !important;  /* Zwingt das Wappen auf diese Breite */
-    height: 45px !important; /* Zwingt das Wappen auf diese Höhe */
+    width: 55px !important;     /* vorher 45px */
+    height: 55px !important;
     object-fit: contain;     /* Passt das Bild sauber in die 45x45 Box an, ohne es zu verzerren! */
     flex-shrink: 0;          /* Verhindert, dass das Wappen durch langen Text zerquetscht wird */
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6)); /* Gibt den Wappen einen leichten 3D-Schatten */
@@ -703,18 +703,22 @@ section h2 {
     justify-content: center;
 }
 
+/* Stadtname */
 .etappe-info h3 {
-    margin: 0 0 4px 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;          /* vorher 1.3rem */
     color: #fff;
-    border: none;
+    font-weight: 500;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.9);
+    margin: 0 0 4px 0;
 }
 
+/* Land/Bundesland – kein Grün mehr */
 .etappe-info p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #4caf50;
-    font-weight: 600;
+    font-size: 1rem;            /* vorher 0.95rem */
+    color: rgba(255,255,255,0.85); /* weiß statt grün */
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.9);
 }
 
 /* Badge "✓ Geschafft" – standardmäßig versteckt */
