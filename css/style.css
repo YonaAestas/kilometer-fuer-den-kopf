@@ -10,7 +10,7 @@ body {
         background: #0f0f0f;
         color: #f5f5f5;
         line-height: 1.6;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.7;
     }
 
@@ -49,7 +49,7 @@ body {
 .clean-nav .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     opacity: 0.8;
     transition: opacity 0.3s ease;
@@ -115,7 +115,7 @@ body {
 
 /* Fließtext allgemein lesbarer */
 body {
-    font-size: 16px;        /* explizit setzen */
+    font-size: 17px;        /* explizit setzen */
     line-height: 1.7;       /* vorher 1.6 */
 }
 
@@ -145,7 +145,7 @@ section h2 {
     display: inline-block;
     padding: 14px 35px;
     border-radius: 50px;
-    font-size: 15px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -240,7 +240,7 @@ section h2 {
         padding: 40px;
         background: #000;
         color: #bbb;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     @media (max-width: 768px) {
@@ -335,7 +335,7 @@ section h2 {
     padding: 12px 14px;
     background: linear-gradient(transparent, rgba(0,0,0,0.75));
     color: #fff;
-    font-size: 14px;
+    font-size: 17px;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -374,7 +374,7 @@ section h2 {
 
 .gallery-link-label {
     color: #4caf50;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.5px;
 }
 
@@ -469,7 +469,7 @@ section h2 {
 
 /* Untertitel für mehr Kontext (Freiraum) */
 .section-subtitle {
-    font-size: 16px;
+    font-size: 20px;
     color: #bbb;
     margin-bottom: 40px;
     font-weight: 300;
@@ -585,7 +585,7 @@ section h2 {
 .card p, 
 .card ul {
     color: #bbb;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 1.7;
     margin: 0;
