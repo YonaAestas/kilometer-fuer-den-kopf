@@ -779,10 +779,10 @@ section h2 {
 
 /* Statuszeile */
 .route-status {
-    margin-top: 16px;
+    margin-top: 20px;
     color: #bbb;
     font-size: 15px;
-    transition: color 0.3s;
+    text-align: center;
 }
 
 /* Badge-Animation */
