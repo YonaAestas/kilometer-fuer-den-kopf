@@ -765,6 +765,8 @@ footer {
 }
 
 .back-link {
+    color: #4caf50;
+    text-decoration: none;
     position: relative;
     z-index: 1;
 }
