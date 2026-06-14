@@ -5,7 +5,7 @@ const images = [
     { src: "data/bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg", caption: "Innsbruck" },
     { src: "data/bilder/Mautstraße_Wallgau_Vorderriß.jpg",                  caption: "Mautstraße Wallgau" },
     { src: "data/bilder/Kurz_vor_Bad_Tölz.jpg",                             caption: "Kurz vor Bad Tölz" },
-    { src: "data/bilder/Österreich_Telfs.png",                               caption: "Österreich – Telfs" }
+    { src: "data/bilder/Oesterreich_Telfs.png",                              caption: "Österreich – Telfs" }
 ];
 
 let currentIndex = 0;
