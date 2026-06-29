@@ -745,6 +745,102 @@ footer {
 .footer-social a:hover { opacity: 1; }
 
 /* =========================================
+   SPONSOREN-SEITE
+========================================= */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.sponsor-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(74,107,83,0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.sponsor-logo {
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.sponsor-body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-body h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.sponsor-body p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    flex: 1;
+}
+
+.sponsor-link {
+    color: #3ecf6b;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.sponsor-link:hover {
+    opacity: 1;
+}
+
+.sponsor-cta {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 15px;
+}
+
+.sponsor-cta a {
+    color: #3ecf6b;
+    text-decoration: none;
+}
+
+.sponsor-cta a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sponsor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
    PROJEKT TEXT
 ========================================= */
 #projekt p strong {
@@ -765,8 +861,6 @@ footer {
 }
 
 .back-link {
-    color: #4caf50;
-    text-decoration: none;
     position: relative;
     z-index: 1;
 }
@@ -887,6 +981,7 @@ input, textarea {
         font-size: 18px;
     }
 }
+
 /* =========================================
    JOURNAL
 ========================================= */
