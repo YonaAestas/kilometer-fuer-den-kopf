@@ -826,7 +826,7 @@ footer {
 }
 
 .sponsor-cta a {
-    color: #3ecf6b;
+    color: #3ecf6b !important;
     text-decoration: none;
 }
 
