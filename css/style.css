@@ -858,6 +858,9 @@ footer {
 ========================================= */
 .page-header {
     padding: 140px 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .back-link,
