@@ -860,9 +860,10 @@ footer {
     padding: 140px 20px 40px;
 }
 
-.back-link {
-    position: relative;
-    z-index: 1;
+.back-link,
+.back-link:visited {
+    color: #4caf50;
+    text-decoration: none;
 }
 
 /* =========================================
