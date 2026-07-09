@@ -16,7 +16,7 @@
    9 = + Varenna (Ziel erreicht!)
    ============================================================ */
 
-const DONE = 3; // <-- diese Zahl ändern & Datei hochladen
+const DONE = 4; // <-- diese Zahl ändern & Datei hochladen
 
 (function () {
     const TOTAL = 9;
