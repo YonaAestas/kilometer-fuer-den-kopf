@@ -108,12 +108,37 @@
             maxZoom: 18
         }).addTo(map);
 
-        // Route als Linie
-        var polyline = L.polyline(ROUTE_COORDS, {
-            color: '#3ecf6b',
-            weight: 3,
-            opacity: 0.85
-        }).addTo(map);
+        // Route in "geschafft" und "offen" aufteilen
+function closestIndex(coords, lat, lon) {
+    var best = 0, bestDist = Infinity;
+    coords.forEach(function (c, i) {
+        var d = Math.pow(c[0] - lat, 2) + Math.pow(c[1] - lon, 2);
+        if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+}
+
+var splitIdx = ROUTE_COORDS.length - 1;
+if (done > 0 && done <= STOPS.length) {
+    var lastDoneStop = STOPS[done - 1];
+    splitIdx = closestIndex(ROUTE_COORDS, lastDoneStop.lat, lastDoneStop.lon);
+}
+
+var doneCoords = ROUTE_COORDS.slice(0, splitIdx + 1);
+var futureCoords = ROUTE_COORDS.slice(splitIdx);
+
+L.polyline(futureCoords, {
+    color: '#555',
+    weight: 3,
+    opacity: 0.5,
+    dashArray: '6,8'
+}).addTo(map);
+
+var polyline = L.polyline(doneCoords, {
+    color: '#3ecf6b',
+    weight: 3,
+    opacity: 0.85
+}).addTo(map);
 
         map.fitBounds(polyline.getBounds(), { padding: [30, 30] });
 
