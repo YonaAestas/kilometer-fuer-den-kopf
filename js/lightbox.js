@@ -1,8 +1,12 @@
-const items = document.querySelectorAll('.galerie-grid img');
-const images = Array.from(items).map(img => ({
-    src: img.src,
-    caption: img.alt
-}));
+const images = [
+    { src: "../data/bilder/Gmund_Tegernsee.jpg",                                caption: "Gmund am Tegernsee" },
+    { src: "../data/bilder/Sonnenuntergang_Sylvensteinsee.jpg",                 caption: "Sonnenuntergang am Sylvensteinsee" },
+    { src: "../data/bilder/Lüftlmalerei.jpg",                                   caption: "Lüftlmalerei" },
+    { src: "../data/bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg", caption: "Innsbruck" },
+    { src: "../data/bilder/Mautstraße_Wallgau_Vorderriß.jpg",                  caption: "Mautstraße Wallgau" },
+    { src: "../data/bilder/Kurz_vor_Bad_Tölz.jpg",                             caption: "Kurz vor Bad Tölz" },
+    { src: "../data/bilder/Oesterreich_Telfs.png",                              caption: "Österreich – Telfs" }
+];
 
 let currentIndex = 0;
 
