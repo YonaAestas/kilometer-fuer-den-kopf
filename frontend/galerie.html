@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie – Kilometer für den Kopf</title>
+    <link rel="icon" type="image/png" href="../data/bilder/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .galerie-grid {
+            columns: 3;
+            column-gap: 12px;
+        }
+
+        .galerie-item {
+            break-inside: avoid;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .galerie-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .galerie-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .galerie-item .galerie-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 12px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.75));
+            color: #fff;
+            font-size: 13px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .galerie-item:hover .galerie-overlay {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .galerie-grid { columns: 2; }
+        }
+
+        @media (max-width: 480px) {
+            .galerie-grid { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="clean-nav">
+    <a href="../index.html" class="nav-logo">
+        <img src="../data/bilder/Kilometer_für_den_Kopf01.png" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="../index.html#projekt">Projekt</a>
+        <a href="../index.html#route">Route</a>
+        <a href="../index.html#karte">Karte</a>
+        <a href="../index.html#gallery">Galerie</a>
+        <a href="ausruestung.html">Ausrüstung</a>
+        <a href="../index.html#kontakt">Kontakt</a>
+        <a href="../index.html#sponsoring" class="nav-btn">Sponsoring</a>
+    </div>
+</nav>
+
+<div class="page-header">
+    <a href="../index.html#gallery" class="back-link">← Zurück zur Hauptseite</a>
+    <h1>Galerie</h1>
+    <p class="section-subtitle">Bilder von unterwegs – Alpen, Pässe, Seen und alles dazwischen.</p>
+</div>
+
+<section>
+    <div class="galerie-grid" id="galerie-grid">
+
+        <!-- Bilder hier einfügen nach diesem Muster:
+        <div class="galerie-item" onclick="openLightbox(0)">
+            <img src="../data/bilder/DATEINAME.jpg" alt="Beschreibung">
+            <div class="galerie-overlay">Beschreibung</div>
+        </div>
+        -->
+
+        <!-- Beispiel mit deinen vorhandenen Bildern: -->
+        <div class="galerie-item" onclick="openLightbox(0)">
+            <img src="../data/bilder/Gmund_Tegernsee.jpg" alt="Gmund am Tegernsee">
+            <div class="galerie-overlay">Gmund am Tegernsee</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(1)">
+            <img src="../data/bilder/Sonnenuntergang_Sylvensteinsee.jpg" alt="Sylvensteinsee">
+            <div class="galerie-overlay">Sonnenuntergang am Sylvensteinsee</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(2)">
+            <img src="../data/bilder/Lüftlmalerei.jpg" alt="Lüftlmalerei">
+            <div class="galerie-overlay">Lüftlmalerei</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(3)">
+            <img src="../data/bilder/Mariahilfzeile-Bunte-Haeuser-Innsbruck-scaled.jpg" alt="Innsbruck">
+            <div class="galerie-overlay">Innsbruck</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(4)">
+            <img src="../data/bilder/Mautstraße_Wallgau_Vorderriß.jpg" alt="Mautstraße Wallgau">
+            <div class="galerie-overlay">Mautstraße Wallgau</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(5)">
+            <img src="../data/bilder/Kurz_vor_Bad_Tölz.jpg" alt="Kurz vor Bad Tölz">
+            <div class="galerie-overlay">Kurz vor Bad Tölz</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(6)">
+            <img src="../data/bilder/Oesterreich_Telfs.png" alt="Österreich – Telfs">
+            <div class="galerie-overlay">Österreich – Telfs</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(7)">
+            <img src="../data/bilder/Blick_auf_die_Isar.jpg" alt="Blick auf die Isar">
+            <div class="galerie-overlay">Blick auf die Isar</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(8)">
+            <img src="../data/bilder/Campingplatz.jpg" alt="Campingplatz">
+            <div class="galerie-overlay">Campingplatz</div>
+        </div>
+        <div class="galerie-item" onclick="openLightbox(9)">
+            <img src="../data/bilder/Ein_Berg_vorm_Rewe.jpg" alt="Ein Berg vorm Rewe">
+            <div class="galerie-overlay">Ein Berg vorm Rewe</div>
+        </div>
+
+        <!-- Neue Bilder von der Tour hier einfügen! -->
+
+    </div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <div id="lb-inner" onclick="event.stopPropagation()">
+        <button id="lb-close" onclick="closeLightbox()">✕</button>
+        <button id="lb-prev" onclick="event.stopPropagation(); changeImage(-1)">&#8249;</button>
+        <button id="lb-next" onclick="event.stopPropagation(); changeImage(1)">&#8250;</button>
+        <img id="lb-img" src="" alt="">
+        <p id="lb-caption"></p>
+    </div>
+</div>
+
+<footer>
+    © 2026 Kilometer für den Kopf · <a href="../index.html" style="color:#3ecf6b; text-decoration:none;">Zurück zur Hauptseite</a>
+</footer>
+
+<script>
+// Lightbox – liest alle Bilder automatisch aus dem Grid
+const items = document.querySelectorAll('.galerie-item img');
+const images = Array.from(items).map(img => ({
+    src: img.src,
+    caption: img.alt
+}));
+
+let currentIndex = 0;
+
+function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById('lb-img').src = images[index].src;
+    document.getElementById('lb-caption').textContent = images[index].caption;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function changeImage(dir) {
+    currentIndex = (currentIndex + dir + images.length) % images.length;
+    document.getElementById('lb-img').src = images[currentIndex].src;
+    document.getElementById('lb-caption').textContent = images[currentIndex].caption;
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') changeImage(1);
+    if (e.key === 'ArrowLeft') changeImage(-1);
+});
+</script>
+
+<script src="../js/nav.js"></script>
+<a href="#" id="back-to-top" title="Nach oben">↑</a>
+
+</body>
+</html>
