@@ -35,6 +35,7 @@ von Gmund am Tegernsee bis Varenna am Comer See.
 │   ├── ausruestung-verpflegung.html
 │   ├── ausruestung-erstehilfe.html
 │   ├── ausruestung-koerperpflege.html
+│   ├── galerie.html
 │   ├── journal.html
 │   └── sponsoren.html
 │
